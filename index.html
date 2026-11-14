@@ -7,7 +7,7 @@
   <meta name="description" content="LEGOLAND Pelotero, salón en Av. Facundo Zuviría 5951, Santa Fe. Un espacio para celebrar, jugar y compartir. Consultá tu cumpleaños por WhatsApp.">
   <meta name="theme-color" content="#F5C518">
   <meta property="og:title" content="Pelotero Legoland | Salón de pelotero para cumpleaños">
-  <meta property="og:description" content="Un espacio para celebrar, jugar y compartir. Diversión para chicos y también para grandes. Av. Facundo Zuviría 5951, Santa Fe.">
+  <meta property="og:description" content="Un espacio para celebrar, jugar y compartir. Av. Facundo Zuviría 5951, Santa Fe.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
   <meta property="og:image" content="https://images.pexels.com/photos/296308/pexels-photo-296308.jpeg?auto=compress&cs=tinysrgb&w=1200">
@@ -26,7 +26,7 @@
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
     "name": "LEGOLAND Pelotero",
-    "description": "Un espacio para celebrar, jugar y compartir. Diversión para chicos y también para grandes.",
+    "description": "Un espacio para celebrar, jugar y compartir.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Av. Facundo Zuviría 5951",
@@ -188,7 +188,6 @@
     a.btn, a.btn:visited { color: var(--red-ink); }
     .btn svg { width: 22px; height: 22px; flex: 0 0 auto; }
     .btn-small { min-height: 44px; padding: 0.45rem 0.9rem; font-size: 1rem; box-shadow: none; }
-    .btn-green { background: #075e54; box-shadow: 0 8px 18px rgba(28, 25, 23, 0.16); }
     .btn-line {
       background: transparent;
       color: var(--ink);
@@ -268,13 +267,6 @@
       display: grid;
       gap: 28px;
     }
-    .why-lead {
-      font-family: Fredoka, Nunito, "Trebuchet MS", sans-serif;
-      font-size: clamp(1.45rem, 2.4vw, 2rem);
-      line-height: 1.35;
-      letter-spacing: -0.03em;
-      max-width: 16em;
-    }
     .reasons { list-style: none; margin: 0; padding: 0; }
     .reasons li {
       display: grid;
@@ -296,20 +288,6 @@
     .ico-red { background: var(--red); color: white; }
     .ico-yellow { background: var(--yellow); color: var(--ink); }
     .ico-blue { background: var(--blue); color: white; }
-    .ico-green { background: var(--green); color: white; }
-
-    .owner-note {
-      border: 2px dashed var(--red);
-      background: #fff;
-      color: #7f1d1d;
-      border-radius: 14px;
-      padding: 12px 16px;
-      font-weight: 800;
-      margin: 0 0 1rem;
-    }
-    .sample-banner {
-      margin: 0 0 1rem;
-    }
 
     .games {
       display: grid;
@@ -345,7 +323,7 @@
       color: white;
       font-weight: 800;
     }
-    .game-photo.is-missing::after { content: "Reemplazá por una foto real del negocio"; }
+    .game-photo.is-missing::after { content: ""; }
     .game-body { padding: 16px 18px 18px; display: grid; gap: 8px; }
     .game-body h3 { font-size: 1.35rem; }
     .game-body p { color: var(--muted); }
@@ -360,7 +338,7 @@
     }
     .stars { width: 116px; height: 22px; color: #a16207; display: block; margin-bottom: 10px; }
     .review q { font-size: 1.08rem; font-weight: 700; quotes: none; display: block; }
-    .review p { margin-top: 10px; color: var(--muted); font-weight: 800; }
+    .review p { margin: 10px 0 0; color: var(--muted); font-weight: 800; }
 
     .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
     .steps li {
@@ -400,27 +378,10 @@
     .form-status { margin: 12px 0 0; font-weight: 800; color: #7f1d1d; }
     .form-status:empty { display: none; }
     .form-status.is-ok { color: #14532d; }
-    .form-hint { margin-top: 10px; color: var(--muted); font-weight: 700; max-width: 46ch; }
 
     .contact-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 16px; }
     .coverage { font-size: 1.15rem; max-width: 40rem; }
 
-    .float-stud {
-      position: absolute;
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .stud-red {
-      width: 72px; height: 72px; right: 5%; top: 36px;
-      background: radial-gradient(circle at 50% 38%, #ff8d93 0 28%, var(--red) 29% 100%);
-      box-shadow: 0 10px 16px rgba(28, 25, 23, 0.16);
-    }
-    .stud-blue {
-      width: 46px; height: 46px; left: 3%; bottom: 28px;
-      background: radial-gradient(circle at 50% 38%, #93b0ff 0 28%, var(--blue) 29% 100%);
-      box-shadow: 0 10px 16px rgba(28, 25, 23, 0.16);
-    }
     .why, .band .wrap { position: relative; z-index: 1; }
 
     .site-footer {
@@ -428,16 +389,12 @@
       color: #fff8ef;
       padding: 2rem 20px calc(5.5rem + env(safe-area-inset-bottom));
     }
-    .site-footer a { color: #ffe58a; font-weight: 800; }
     .foot {
       display: flex;
       flex-wrap: wrap;
       gap: 10px 18px;
       align-items: center;
-      justify-content: space-between;
     }
-    .foot nav { display: flex; flex-wrap: wrap; gap: 8px 14px; }
-    .foot p { margin-top: 14px; max-width: 70ch; }
 
     .wa-float {
       position: fixed;
@@ -466,11 +423,6 @@
     .motion .ico-red svg { animation: pulse 2.8s ease-in-out infinite; }
     .motion .ico-yellow svg { animation: tilt-star 2.6s ease-in-out infinite; }
     .motion .ico-blue svg { animation: bob 2.4s ease-in-out infinite; }
-    .motion .hand {
-      transform-box: view-box;
-      transform-origin: 24px 24px;
-      animation: spin 8s linear infinite;
-    }
     .motion .wa-float::after {
       content: "";
       position: absolute;
@@ -532,13 +484,12 @@
       .hero-grid { min-height: 0; }
       .hero-stage { flex: 0 0 auto; height: 210px; min-height: 210px; }
       .hero-copy .btn, #cotizar .btn { width: 100%; }
-      .float-stud { display: none; }
     }
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
-      .motion .ico svg, .motion .hand, .motion .wa-float::after, .motion .css-toys span { animation: none !important; }
+      .motion .ico svg, .motion .wa-float::after, .motion .css-toys span { animation: none !important; }
     }
 
     @keyframes pulse {
@@ -553,7 +504,6 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-4px); }
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
     @keyframes ping {
       0% { transform: scale(1); opacity: 0.65; }
       100% { transform: scale(1.42); opacity: 0; }
@@ -594,10 +544,9 @@
           <p class="lede">Un espacio para celebrar, jugar y compartir.</p>
           <a class="btn" href="#cotizar">
             <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.4a10 10 0 0 0 4.65 1.18h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2zm5.76 14.15c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.41-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.37c.24-.27.64-.39 1.02-.39.12 0 .23 0 .33.01.3.01.44.03.64.49.24.58.82 2 .89 2.15.07.14.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.55.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.59-.07.16-.17.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.54.73 1.8.86.27.13.44.2.51.31.06.11.06.64-.18 1.32z"/></svg>
-            Consultar fecha por WhatsApp
+            Consultar fecha
           </a>
-          <p>Diversión para chicos... y también para grandes.</p>
-          <p class="fine">Av. Facundo Zuviría 5951, Santa Fe. Cuatro datos y te abrimos WhatsApp.</p>
+          <p class="fine">Av. Facundo Zuviría 5951, Santa Fe</p>
         </div>
         <div class="hero-stage" id="stage">
           <div class="css-toys" aria-hidden="true">
@@ -617,7 +566,6 @@
       <div class="wrap why">
         <div>
           <h2>Por qué elegirnos</h2>
-          <p class="why-lead">En Zuviría 5951 hay lugar para que los chicos jueguen y los grandes compartan el cumple.</p>
         </div>
         <ul class="reasons">
           <li>
@@ -633,17 +581,6 @@
             </div>
           </li>
           <li>
-            <span class="ico ico-yellow" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="currentColor">
-                <path d="m24 6 4.6 9.4 10.4 1.5-7.5 7.3 1.8 10.3L24 29.8 14.7 34.5l1.8-10.3L9 16.9l10.4-1.5L24 6z"/>
-              </svg>
-            </span>
-            <div>
-              <h3>Buenas valoraciones</h3>
-              <p>Las familias vuelven a elegirnos para el próximo cumpleaños.</p>
-            </div>
-          </li>
-          <li>
             <span class="ico ico-blue" aria-hidden="true">
               <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M10 16h20a6 6 0 0 1 6 6v4a6 6 0 0 1-6 6H20l-8 6v-6h-2a6 6 0 0 1-6-6v-4a6 6 0 0 1 6-6z"/>
@@ -655,16 +592,14 @@
             </div>
           </li>
           <li>
-            <span class="ico ico-green" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                <circle cx="24" cy="24" r="14"/>
-                <g class="hand"><path d="M24 24V14"/></g>
-                <path d="M24 24h7"/>
+            <span class="ico ico-yellow" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <path d="m24 6 4.6 9.4 10.4 1.5-7.5 7.3 1.8 10.3L24 29.8 14.7 34.5l1.8-10.3L9 16.9l10.4-1.5L24 6z"/>
               </svg>
             </span>
             <div>
-              <h3>Turno reservado</h3>
-              <p>Cuando confirmás, ese horario queda para tu festejo.</p>
+              <h3>Buenas valoraciones</h3>
+              <p><a href="https://www.google.com/maps/place/Pelotero+Legoland/@-31.6115338,-60.7073598,17z/data=!4m8!3m7!1s0x95b50763ceb95ce3:0x36410c159e58e90d!8m2!3d-31.6115384!4d-60.7047849!9m1!1b1!16s%2Fg%2F11b6v936w8?entry=ttu&amp;g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Mirá lo que cuentan las familias que ya festejaron acá.</a></p>
             </div>
           </li>
         </ul>
@@ -674,8 +609,8 @@
     <section class="band reveal" id="juegos">
       <div class="wrap">
         <h2>El salón</h2>
-        <p class="intro">Pelotero, juegos y espacio para el cumpleaños. Los textos se editan en el HTML.</p>
-        <p class="owner-note">Fotos de stock para esta maqueta. Reemplazalas por fotos reales del salón.</p>
+        <!-- Los textos de las tarjetas se editan en el HTML. Fotos de stock: reemplazarlas por fotos reales del salón. -->
+        <p class="intro">Pelotero, juegos y espacio para el cumpleaños.</p>
         <div class="games">
           <article class="game tilt">
             <div class="game-photo">
@@ -683,8 +618,7 @@
             </div>
             <div class="game-body">
               <h3>Juegos para saltar</h3>
-              <!-- EDITAR texto -->
-              <p>Parte del salón, para que los más grandes se diviertan en el cumple.</p>
+              <p>Para saltar durante el cumple.</p>
             </div>
           </article>
           <article class="game tilt">
@@ -693,8 +627,7 @@
             </div>
             <div class="game-body">
               <h3>El pelotero</h3>
-              <!-- EDITAR texto -->
-              <p>El corazón del salón: pelotas de colores para jugar durante el festejo.</p>
+              <p>Pelotas de colores para jugar.</p>
             </div>
           </article>
           <article class="game tilt">
@@ -702,39 +635,8 @@
               <img src="https://images.pexels.com/photos/35649390/pexels-photo-35649390.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Una nena saliendo por la puerta de un inflable rojo, amarillo y verde" width="1200" height="800" loading="lazy" decoding="async">
             </div>
             <div class="game-body">
-              <h3>Más juegos</h3>
-              <!-- EDITAR texto -->
-              <p>Espacios de color para que el grupo se mueva sin salir del salón.</p>
-            </div>
-          </article>
-          <article class="game tilt">
-            <div class="game-photo">
-              <img src="https://images.pexels.com/photos/19875876/pexels-photo-19875876.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Una nena pequeña sonriendo entre pelotas de colores en un pelotero" width="1000" height="1400" loading="lazy" decoding="async">
-            </div>
-            <div class="game-body">
-              <h3>Para los más chicos</h3>
-              <!-- EDITAR texto -->
-              <p>Un rincón más tranquilo para los que todavía no saltan.</p>
-            </div>
-          </article>
-          <article class="game tilt">
-            <div class="game-photo">
-              <img src="https://images.pexels.com/photos/18294173/pexels-photo-18294173.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Inflable con forma de payaso de colores, sentado sobre una base roja y azul" width="1200" height="860" loading="lazy" decoding="async">
-            </div>
-            <div class="game-body">
-              <h3>Para las fotos</h3>
-              <!-- EDITAR texto -->
-              <p>Rincones coloridos del salón para la foto del cumpleaños.</p>
-            </div>
-          </article>
-          <article class="game tilt">
-            <div class="game-photo">
-              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80" alt="Ramo de globos de colores en una fiesta de cumpleaños" width="1200" height="800" loading="lazy" decoding="async">
-            </div>
-            <div class="game-body">
-              <h3>La mesa del cumple</h3>
-              <!-- EDITAR texto -->
-              <p>Lugar para la torta, los globos y soplar las velitas con los invitados.</p>
+              <h3>Inflables y juegos</h3>
+              <p>Inflables y juegos en el salón.</p>
             </div>
           </article>
         </div>
@@ -744,7 +646,6 @@
     <section class="band band-white reveal" id="opiniones">
       <div class="wrap">
         <h2>Opiniones</h2>
-        <p class="intro">Comentarios públicos de familias que festejaron en el salón.</p>
         <div class="reviews">
           <article class="review tilt">
             <svg class="stars" viewBox="0 0 120 24" aria-hidden="true" fill="currentColor">
@@ -754,9 +655,9 @@
               <path d="M84 17.3 90.2 21l-1.6-7L94 9.2l-7.2-.6L84 2 81.2 8.6 74 9.2l5.4 4.8L77.8 21 84 17.3z"/>
               <path d="M108 17.3 114.2 21l-1.6-7L118 9.2l-7.2-.6L108 2 105.2 8.6 98 9.2l5.4 4.8 1.8 6.8-6.2-3.7z"/>
             </svg>
-            <span class="visually-hidden">Ejemplo: 5 de 5 estrellas</span>
-            <q>El cumpleaños fue increíble. Las chicas, atentas con los niños y muy amables con los adultos. Se ocuparon de todo el cumple.</q>
-            <p>Reseña pública</p>
+            <span class="visually-hidden">5 de 5 estrellas</span>
+            <q>El lugar es muy lindo, las chicas estuvieron hiper atentas en todo. Los chicos se divirtieron muchísimo y los adultos no quedamos excluidos.</q>
+            <p>Berenice Díaz</p>
           </article>
           <article class="review tilt">
             <svg class="stars" viewBox="0 0 120 24" aria-hidden="true" fill="currentColor">
@@ -766,9 +667,9 @@
               <path d="M84 17.3 90.2 21l-1.6-7L94 9.2l-7.2-.6L84 2 81.2 8.6 74 9.2l5.4 4.8L77.8 21 84 17.3z"/>
               <path d="M108 17.3 114.2 21l-1.6-7L118 9.2l-7.2-.6L108 2 105.2 8.6 98 9.2l5.4 4.8 1.8 6.8-6.2-3.7z"/>
             </svg>
-            <span class="visually-hidden">Ejemplo: 5 de 5 estrellas</span>
-            <q>Amplio, muy bien equipado y con muy buena atención de los profes.</q>
-            <p>Reseña pública</p>
+            <span class="visually-hidden">5 de 5 estrellas</span>
+            <q>El pelotero súper completo, inflables enormes que les encantaron a los peques. La animación también de los profes muy buena.</q>
+            <p>Camila Córdoba</p>
           </article>
           <article class="review tilt">
             <svg class="stars" viewBox="0 0 120 24" aria-hidden="true" fill="currentColor">
@@ -778,9 +679,9 @@
               <path d="M84 17.3 90.2 21l-1.6-7L94 9.2l-7.2-.6L84 2 81.2 8.6 74 9.2l5.4 4.8L77.8 21 84 17.3z"/>
               <path d="M108 17.3 114.2 21l-1.6-7L118 9.2l-7.2-.6L108 2 105.2 8.6 98 9.2l5.4 4.8 1.8 6.8-6.2-3.7z"/>
             </svg>
-            <span class="visually-hidden">Ejemplo: 5 de 5 estrellas</span>
-            <q>Festejamos en el turno de 16 a 18:30. El equipo se dedicó al cumple de principio a fin.</q>
-            <p>Reseña pública</p>
+            <span class="visually-hidden">5 de 5 estrellas</span>
+            <q>Amplio espacio muy bien equipado, excelente atención de los profes. Muy recomendable.</q>
+            <p>Gisela Isijara</p>
           </article>
         </div>
       </div>
@@ -794,21 +695,21 @@
             <span class="step-num">1</span>
             <div>
               <h3>Nos escribís</h3>
-              <p>Completás el formulario corto y se abre WhatsApp con tus datos.</p>
+              <p>Completás el formulario y se abre WhatsApp con tus datos.</p>
             </div>
           </li>
           <li>
             <span class="step-num">2</span>
             <div>
-              <h3>Te confirmamos el turno</h3>
-              <p>Te decimos si esa fecha está libre y cómo es el festejo en el salón.</p>
+              <h3>Te confirmamos</h3>
+              <p>Te decimos si esa fecha está libre.</p>
             </div>
           </li>
           <li>
             <span class="step-num">3</span>
             <div>
               <h3>Reservamos tu fecha</h3>
-              <p>El cumpleaños se festeja en el salón, con el pelotero y los juegos.</p>
+              <p>Queda reservado el turno para tu festejo.</p>
             </div>
           </li>
         </ol>
@@ -818,20 +719,18 @@
     <section class="band band-soft reveal" id="cotizar">
       <div class="wrap">
         <h2>Consultá tu fecha</h2>
-        <p class="intro">Cuatro preguntas. Al enviar se abre WhatsApp con las respuestas y no se guarda nada en un servidor.</p>
+        <p class="intro">Completá y te abrimos WhatsApp.</p>
+        <!-- y no se guarda nada en un servidor -->
         <form id="quote-form" novalidate>
           <div class="fields">
-            <label>Nombre de quien cumple
-              <input id="nombre" name="nombre" type="text" maxlength="60" required autocomplete="name">
-            </label>
             <label>Cuántos años cumple
               <input id="edad" name="edad" type="number" inputmode="numeric" min="1" max="12" required autocomplete="off">
             </label>
             <label>Fecha del cumple
               <input id="fecha" name="fecha" type="date" required>
             </label>
-            <label>Cuántos chicos, más o menos
-              <input id="chicos" name="chicos" type="number" inputmode="numeric" min="1" max="80" required autocomplete="off">
+            <label>Nombre de quien cumple <span class="fine">(opcional)</span>
+              <input id="nombre" name="nombre" type="text" maxlength="60" autocomplete="name">
             </label>
             <div class="span-2">
               <button class="btn" type="submit">
@@ -848,14 +747,13 @@
     <section class="band band-white reveal" id="contacto">
       <div class="wrap">
         <h2>Contacto</h2>
-        <p class="intro">Escribinos al +54 9 3424 07-8054 o seguinos en Instagram.</p>
+        <p class="intro">Escribinos al +54 9 342 407-8054 o seguinos en Instagram.</p>
         <div class="contact-actions">
-          <a class="btn btn-green" href="#cotizar">Ir al formulario</a>
           <a class="btn btn-line" id="link-ig" href="https://www.instagram.com/pelotero.legoland.santafe/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a class="btn btn-line" id="link-maps" href="https://maps.app.goo.gl/VFuuvjcJxA2Gob9q6" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+          <a class="btn btn-line" id="link-maps" href="https://www.google.com/maps/dir//Pelotero+Legoland,+Av.+Facundo+Zuvir%C3%ADa+5951,+S3004LSG+Santa+Fe+de+la+Vera+Cruz,+Santa+Fe/@-31.6115384,-60.7047849,17z/data=!4m17!1m7!3m6!1s0x95b50763ceb95ce3:0x36410c159e58e90d!2sPelotero+Legoland!8m2!3d-31.6115384!4d-60.7047849!16s%2Fg%2F11b6v936w8!4m8!1m0!1m5!1m1!1s0x95b50763ceb95ce3:0x36410c159e58e90d!2m2!1d-60.7047849!2d-31.6115384!3e3?entry=ttu&amp;g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
         </div>
         <h3 style="font-size:1.45rem;margin:0 0 8px">Dónde estamos</h3>
-        <p class="coverage">Av. Facundo Zuviría 5951, Santa Fe. El turno te lo confirmamos por WhatsApp.</p>
+        <p class="coverage">Av. Facundo Zuviría 5951, Santa Fe.</p>
       </div>
     </section>
   </main>
@@ -863,18 +761,11 @@
   <footer class="site-footer">
     <div class="wrap foot">
       <strong>Pelotero Legoland</strong>
-      <nav aria-label="Pie">
-        <a href="#juegos">El salón</a>
-        <a href="#cotizar">Consultar</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
     </div>
-    <div class="wrap">
-      <p>Fotos de muestra de Pexels y Unsplash. Reemplazalas por fotos del negocio. La escena de pelotas y bloques es original de esta página; Three.js r128 (MIT) se carga desde cdnjs.</p>
-    </div>
+    <!-- Fotos de muestra de Pexels y Unsplash. Reemplazalas por fotos del negocio. La escena de pelotas y bloques es original de esta página; Three.js r128 (MIT) se carga desde cdnjs. -->
   </footer>
 
-  <a class="wa-float" href="#cotizar" aria-label="Ir al formulario para consultar por WhatsApp">
+  <a class="wa-float" id="wa-float" href="https://wa.me/5493424078054" aria-label="Escribir por WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.4a10 10 0 0 0 4.65 1.18h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2zm5.76 14.15c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.41-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.37c.24-.27.64-.39 1.02-.39.12 0 .23 0 .33.01.3.01.44.03.64.49.24.58.82 2 .89 2.15.07.14.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.55.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.59-.07.16-.17.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.54.73 1.8.86.27.13.44.2.51.31.06.11.06.64-.18 1.32z"/></svg>
   </a>
 
@@ -911,9 +802,7 @@
       aviso.hidden = false;
     }
 
-    document.querySelectorAll("[data-wa]").forEach(function (el) {
-      el.href = enlaceWhatsapp(MENSAJE_WHATSAPP);
-    });
+    document.getElementById("wa-float").href = enlaceWhatsapp(MENSAJE_WHATSAPP);
     document.getElementById("link-ig").href = INSTAGRAM;
 
     const fechaInput = document.getElementById("fecha");
@@ -924,24 +813,16 @@
       evento.preventDefault();
       const edadInput = document.getElementById("edad");
       const nombreInput = document.getElementById("nombre");
-      const chicosInput = document.getElementById("chicos");
       const nombre = nombreInput.value.trim();
       const edad = Number(edadInput.value);
-      const chicos = Number(chicosInput.value);
       const fecha = fechaInput.value;
       let error = "";
       let foco = null;
 
       edadInput.removeAttribute("aria-invalid");
       fechaInput.removeAttribute("aria-invalid");
-      nombreInput.removeAttribute("aria-invalid");
-      chicosInput.removeAttribute("aria-invalid");
 
-      if (nombre.length < 2) {
-        error = "Escribí el nombre de quien cumple.";
-        nombreInput.setAttribute("aria-invalid", "true");
-        foco = nombreInput;
-      } else if (!edadInput.value || !Number.isInteger(edad) || edad < 1 || edad > 12) {
+      if (!edadInput.value || !Number.isInteger(edad) || edad < 1 || edad > 12) {
         error = "La edad tiene que ser un número entre 1 y 12.";
         edadInput.setAttribute("aria-invalid", "true");
         foco = edadInput;
@@ -949,10 +830,6 @@
         error = "Elegí una fecha de hoy en adelante.";
         fechaInput.setAttribute("aria-invalid", "true");
         foco = fechaInput;
-      } else if (!chicosInput.value || !Number.isInteger(chicos) || chicos < 1 || chicos > 80) {
-        error = "Decinos una cantidad aproximada de chicos.";
-        chicosInput.setAttribute("aria-invalid", "true");
-        foco = chicosInput;
       }
 
       if (error) {
@@ -965,11 +842,10 @@
       const lineas = [
         MENSAJE_WHATSAPP,
         "",
-        "Nombre: " + nombre,
         "Años que cumple: " + edad,
-        "Fecha: " + fechaLocal(fecha),
-        "Chicos, más o menos: " + chicos
+        "Fecha: " + fechaLocal(fecha)
       ];
+      if (nombre) lineas.push("Nombre: " + nombre);
 
       const url = enlaceWhatsapp(lineas.join("\n"));
       estado.textContent = "Abrimos WhatsApp con tu mensaje. Si no se abrió, tocá de nuevo el botón.";
