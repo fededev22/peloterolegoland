@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pelotero Legoland | Salón de pelotero para cumpleaños</title>
+  <meta name="description" content="LEGOLAND Pelotero, salón en Av. Facundo Zuviría 5951, Santa Fe. Un espacio para celebrar, jugar y compartir. Consultá tu cumpleaños por WhatsApp.">
+  <meta name="theme-color" content="#F5C518">
+  <meta property="og:title" content="Pelotero Legoland | Salón de pelotero para cumpleaños">
+  <meta property="og:description" content="Un espacio para celebrar, jugar y compartir. Diversión para chicos y también para grandes. Av. Facundo Zuviría 5951, Santa Fe.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:image" content="https://images.pexels.com/photos/296308/pexels-photo-296308.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23F5C518' width='32' height='32' rx='6'/%3E%3Ccircle cx='10' cy='12' r='4' fill='%23C81D25'/%3E%3Ccircle cx='22' cy='12' r='4' fill='%231D4ED8'/%3E%3Ccircle cx='10' cy='22' r='4' fill='%23166534'/%3E%3Ccircle cx='22' cy='22' r='4' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <script>
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("motion");
+    }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EntertainmentBusiness",
+    "name": "LEGOLAND Pelotero",
+    "description": "Un espacio para celebrar, jugar y compartir. Diversión para chicos y también para grandes.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Facundo Zuviría 5951",
+      "addressLocality": "Santa Fe",
+      "addressRegion": "Santa Fe",
+      "addressCountry": "AR"
+    },
+    "sameAs": "https://www.instagram.com/pelotero.legoland.santafe/"
+  }
+  </script>
+  <style>
+    :root {
+      --red: #c81d25;
+      --red-ink: #fff8ef;
+      --yellow: #f5c518;
+      --blue: #1d4ed8;
+      --green: #166534;
+      --ink: #1c1917;
+      --paper: #ffffff;
+      --wash: #e7efff;
+      --soft: #ffe56a;
+      --muted: #3f342c;
+      --line: rgba(28, 25, 23, 0.14);
+      --shadow: 0 14px 30px rgba(28, 25, 23, 0.1);
+      --radius: 22px;
+      --wrap: 1120px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; overflow-x: clip; scrollbar-color: var(--blue) #fff; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Nunito, "Segoe UI", "Trebuchet MS", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    img { max-width: 100%; display: block; }
+    h1, h2, h3, .btn, .brand, .lede, .step-num {
+      font-family: Fredoka, Nunito, "Trebuchet MS", "Segoe UI", sans-serif;
+    }
+    h1, h2, h3 { text-wrap: balance; line-height: 1.2; margin: 0; }
+    p { margin: 0; text-wrap: pretty; }
+    a { color: #1e3a8a; }
+    button, a, summary { touch-action: manipulation; }
+    button, .btn { user-select: none; }
+
+    ::selection { background: var(--yellow); color: var(--ink); }
+    ::placeholder { color: #6b4f16; opacity: 1; }
+
+    :focus { outline: none; }
+    :focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 3px;
+    }
+
+    .skip {
+      position: absolute;
+      left: 12px;
+      top: 0;
+      transform: translateY(-140%);
+      background: var(--ink);
+      color: #fff8ef;
+      padding: 0.6rem 0.9rem;
+      z-index: 80;
+      border-radius: 0 0 12px 12px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .skip:focus { transform: none; color: #fff8ef; }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .wrap {
+      width: min(var(--wrap), 100%);
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: var(--yellow);
+      padding-top: env(safe-area-inset-top);
+      box-shadow: 0 10px 24px rgba(28, 25, 23, 0.08);
+    }
+    .bar {
+      display: flex;
+      align-items: center;
+      gap: 12px 20px;
+      min-height: 64px;
+      width: min(var(--wrap), calc(100% - 40px));
+      padding: 12px 0 10px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-right: auto;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+    .dots { display: inline-flex; gap: 4px; }
+    .dots i { width: 11px; height: 11px; border-radius: 50%; display: block; }
+    .dots i:nth-child(1) { background: var(--red); }
+    .dots i:nth-child(2) { background: var(--blue); }
+    .dots i:nth-child(3) { background: var(--green); }
+    .dots i:nth-child(4) { background: var(--paper); box-shadow: inset 0 0 0 1.5px rgba(28, 25, 23, 0.25); }
+    .nav-links { display: none; align-items: center; gap: 16px; }
+    .nav-links a {
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .stud-row {
+      height: 14px;
+      background-image: radial-gradient(circle at 16px 7px, #fff6d2 5px, #e0ad08 6.5px, transparent 7px);
+      background-size: 36px 14px;
+      background-repeat: repeat-x;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0.7rem 1.15rem;
+      border: 0;
+      border-radius: 999px;
+      background: var(--red);
+      color: var(--red-ink);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(28, 25, 23, 0.16);
+    }
+    a.btn, a.btn:visited { color: var(--red-ink); }
+    .btn svg { width: 22px; height: 22px; flex: 0 0 auto; }
+    .btn-small { min-height: 44px; padding: 0.45rem 0.9rem; font-size: 1rem; box-shadow: none; }
+    .btn-green { background: #075e54; box-shadow: 0 8px 18px rgba(28, 25, 23, 0.16); }
+    .btn-line {
+      background: transparent;
+      color: var(--ink);
+      box-shadow: none;
+      border: 2px solid var(--ink);
+    }
+    a.btn-line, a.btn-line:visited { color: var(--ink); }
+
+    .hero { padding: 12px 20px 36px; }
+    .hero-grid {
+      min-height: calc(100svh - 5.4rem - env(safe-area-inset-top));
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .hero-stage {
+      order: -1;
+      position: relative;
+      flex: 1 1 200px;
+      min-height: 210px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: var(--soft);
+    }
+    .hero-stage canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .css-toys { position: absolute; inset: 0; }
+    .css-toys span { position: absolute; display: block; }
+    .ball { border-radius: 50%; }
+    .ball-r { width: 54px; height: 54px; background: var(--red); left: 12%; top: 22%; }
+    .ball-y { width: 36px; height: 36px; background: var(--yellow); left: 38%; top: 18%; box-shadow: inset 0 -6px 0 rgba(28, 25, 23, 0.08); }
+    .ball-b { width: 64px; height: 64px; background: var(--blue); right: 16%; top: 28%; }
+    .ball-g { width: 28px; height: 28px; background: var(--green); right: 30%; bottom: 22%; }
+    .mini-brick {
+      width: 74px; height: 36px; border-radius: 8px; background: var(--red); left: 22%; bottom: 18%;
+    }
+    .mini-brick::before, .mini-brick::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 16px; height: 12px;
+      border-radius: 8px 8px 4px 4px;
+      background: #e23b43;
+    }
+    .mini-brick::before { left: 14px; }
+    .mini-brick::after { right: 14px; }
+    .mini-brick.blue { background: var(--blue); width: 48px; left: auto; right: 10%; top: 16%; bottom: auto; }
+    .mini-brick.blue::before, .mini-brick.blue::after { background: #3b6cf0; }
+    .stage-live .css-toys { display: none; }
+
+    .hero-copy { display: grid; gap: 14px; justify-items: start; }
+    h1 { font-size: clamp(2.7rem, 8vw, 5.4rem); letter-spacing: -0.04em; }
+    .c-blue { color: var(--blue); }
+    .c-red { color: var(--red); }
+    .lede {
+      font-size: clamp(1.35rem, 2.6vw, 2rem);
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      line-height: 1.35;
+      max-width: 18em;
+    }
+    .fine { color: var(--muted); max-width: 36em; font-weight: 700; }
+
+    .band { padding: 4.25rem 20px; position: relative; }
+    #juegos, #reservar { background: var(--wash); }
+    .band-white { background: var(--paper); }
+    .band-soft { background: var(--soft); }
+    .band h2 { font-size: clamp(2rem, 4vw, 3.25rem); letter-spacing: -0.03em; margin-bottom: 1.25rem; }
+    .intro { max-width: 38rem; font-size: 1.125rem; margin-bottom: 1.5rem; }
+
+    .why {
+      display: grid;
+      gap: 28px;
+    }
+    .why-lead {
+      font-family: Fredoka, Nunito, "Trebuchet MS", sans-serif;
+      font-size: clamp(1.45rem, 2.4vw, 2rem);
+      line-height: 1.35;
+      letter-spacing: -0.03em;
+      max-width: 16em;
+    }
+    .reasons { list-style: none; margin: 0; padding: 0; }
+    .reasons li {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 14px;
+      align-items: center;
+      padding: 16px 0;
+      border-top: 2px solid var(--line);
+    }
+    .reasons h3 { font-size: 1.35rem; margin-bottom: 4px; }
+    .reasons p { color: var(--muted); max-width: 46ch; }
+    .ico {
+      width: 64px; height: 64px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+    }
+    .ico svg { width: 34px; height: 34px; }
+    .ico-red { background: var(--red); color: white; }
+    .ico-yellow { background: var(--yellow); color: var(--ink); }
+    .ico-blue { background: var(--blue); color: white; }
+    .ico-green { background: var(--green); color: white; }
+
+    .owner-note {
+      border: 2px dashed var(--red);
+      background: #fff;
+      color: #7f1d1d;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-weight: 800;
+      margin: 0 0 1rem;
+    }
+    .sample-banner {
+      margin: 0 0 1rem;
+    }
+
+    .games {
+      display: grid;
+      gap: 16px;
+    }
+    .game {
+      background: var(--paper);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transform: translateZ(0);
+    }
+    .game-photo {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border-radius: var(--radius) var(--radius) 0 0;
+      background: #ffe08a;
+    }
+    .game:first-child .game-photo { aspect-ratio: 4 / 3; }
+    .game-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .game-photo.is-missing {
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 30% 30%, var(--yellow) 0 28px, transparent 29px),
+        radial-gradient(circle at 70% 60%, var(--blue) 0 34px, transparent 35px),
+        var(--red);
+      color: white;
+      font-weight: 800;
+    }
+    .game-photo.is-missing::after { content: "Reemplazá por una foto real del negocio"; }
+    .game-body { padding: 16px 18px 18px; display: grid; gap: 8px; }
+    .game-body h3 { font-size: 1.35rem; }
+    .game-body p { color: var(--muted); }
+
+    .reviews { display: grid; gap: 14px; }
+    .review {
+      background: var(--paper);
+      border: 2px solid rgba(28, 25, 23, 0.12);
+      border-radius: var(--radius);
+      padding: 18px 18px 20px;
+      box-shadow: var(--shadow);
+    }
+    .stars { width: 116px; height: 22px; color: #a16207; display: block; margin-bottom: 10px; }
+    .review q { font-size: 1.08rem; font-weight: 700; quotes: none; display: block; }
+    .review p { margin-top: 10px; color: var(--muted); font-weight: 800; }
+
+    .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+    .steps li {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+    .step-num {
+      width: 56px; height: 56px;
+      display: grid; place-items: center;
+      border-radius: 16px;
+      background: var(--blue);
+      color: white;
+      font-size: 1.6rem;
+    }
+    .steps li:nth-child(2) .step-num { background: var(--yellow); color: var(--ink); }
+    .steps li:nth-child(3) .step-num { background: var(--green); }
+    .steps h3 { font-size: 1.45rem; margin-bottom: 4px; }
+    .steps p { color: var(--muted); max-width: 36ch; }
+
+    .fields { display: grid; gap: 14px; }
+    label { display: grid; gap: 6px; font-weight: 800; }
+    input {
+      width: 100%;
+      min-height: 48px;
+      padding: 0.7rem 0.85rem;
+      border-radius: 14px;
+      border: 2px solid #1e3a8a;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+      font-size: 16px;
+      caret-color: var(--blue);
+    }
+    input[aria-invalid="true"] { border-color: var(--red); }
+    .form-status { margin: 12px 0 0; font-weight: 800; color: #7f1d1d; }
+    .form-status:empty { display: none; }
+    .form-status.is-ok { color: #14532d; }
+    .form-hint { margin-top: 10px; color: var(--muted); font-weight: 700; max-width: 46ch; }
+
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 16px; }
+    .coverage { font-size: 1.15rem; max-width: 40rem; }
+
+    .float-stud {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .stud-red {
+      width: 72px; height: 72px; right: 5%; top: 36px;
+      background: radial-gradient(circle at 50% 38%, #ff8d93 0 28%, var(--red) 29% 100%);
+      box-shadow: 0 10px 16px rgba(28, 25, 23, 0.16);
+    }
+    .stud-blue {
+      width: 46px; height: 46px; left: 3%; bottom: 28px;
+      background: radial-gradient(circle at 50% 38%, #93b0ff 0 28%, var(--blue) 29% 100%);
+      box-shadow: 0 10px 16px rgba(28, 25, 23, 0.16);
+    }
+    .why, .band .wrap { position: relative; z-index: 1; }
+
+    .site-footer {
+      background: var(--ink);
+      color: #fff8ef;
+      padding: 2rem 20px calc(5.5rem + env(safe-area-inset-bottom));
+    }
+    .site-footer a { color: #ffe58a; font-weight: 800; }
+    .foot {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .foot nav { display: flex; flex-wrap: wrap; gap: 8px 14px; }
+    .foot p { margin-top: 14px; max-width: 70ch; }
+
+    .wa-float {
+      position: fixed;
+      z-index: 40;
+      right: max(16px, env(safe-area-inset-right));
+      bottom: max(16px, env(safe-area-inset-bottom));
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #075e54;
+      color: white;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 10px 24px rgba(28, 25, 23, 0.22);
+      text-decoration: none;
+    }
+    .wa-float svg { width: 30px; height: 30px; }
+    .phone-banner {
+      background: var(--red);
+      color: white;
+      font-weight: 800;
+      text-align: center;
+      padding: 12px 20px;
+    }
+
+    .motion .ico-red svg { animation: pulse 2.8s ease-in-out infinite; }
+    .motion .ico-yellow svg { animation: tilt-star 2.6s ease-in-out infinite; }
+    .motion .ico-blue svg { animation: bob 2.4s ease-in-out infinite; }
+    .motion .hand {
+      transform-box: view-box;
+      transform-origin: 24px 24px;
+      animation: spin 8s linear infinite;
+    }
+    .motion .wa-float::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      border: 2px solid #075e54;
+      animation: ping 2.4s ease-out infinite;
+      pointer-events: none;
+    }
+    .motion .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .motion .reveal.is-in { opacity: 1; transform: none; }
+    .motion .css-toys span { animation: floaty 4.5s ease-in-out infinite; }
+    .motion .ball-b { animation-delay: -1s; }
+    .motion .ball-g { animation-delay: -2s; }
+
+    .tilt { transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1); }
+    .tilt.is-tilting { transition: none; }
+
+    @media (hover: hover) and (pointer: fine) {
+      .btn:hover { transform: translateY(-2px); }
+      .btn:active { transform: translateY(0); }
+      .nav-links a:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+      .game-photo img { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+      .game:hover .game-photo img { transform: scale(1.03); }
+      .btn-line:hover { background: var(--ink); color: #fff; }
+      a.btn-line:hover { color: #fff; }
+    }
+    .btn:active { transform: translateY(1px); }
+
+    @media (min-width: 720px) {
+      .fields { grid-template-columns: 1fr 1fr; }
+      .span-2 { grid-column: 1 / -1; }
+      .reviews { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+      .games { grid-template-columns: 1fr 1fr; }
+    }
+    @media (min-width: 860px) {
+      .why { grid-template-columns: 0.85fr 1.15fr; align-items: start; gap: 48px; }
+      .steps { grid-template-columns: repeat(3, 1fr); gap: 22px; }
+      .steps li { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 980px) {
+      .nav-links { display: flex; }
+      .hero { padding-top: 18px; }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+        align-items: center;
+        gap: 28px;
+      }
+      .hero-stage { order: 0; height: min(64vh, 560px); min-height: 420px; align-self: center; }
+      .games { grid-template-columns: repeat(3, 1fr); }
+      .band { padding: 5.5rem 20px; }
+    }
+    @media (max-width: 699px) {
+      .hero-grid { min-height: 0; }
+      .hero-stage { flex: 0 0 auto; height: 210px; min-height: 210px; }
+      .hero-copy .btn, #cotizar .btn { width: 100%; }
+      .float-stud { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .motion .ico svg, .motion .hand, .motion .wa-float::after, .motion .css-toys span { animation: none !important; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.07); }
+    }
+    @keyframes tilt-star {
+      0%, 100% { transform: rotate(-8deg); }
+      50% { transform: rotate(8deg); }
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes ping {
+      0% { transform: scale(1); opacity: 0.65; }
+      100% { transform: scale(1.42); opacity: 0; }
+    }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div id="phone-banner" class="phone-banner" hidden>Falta el número real. Cambiá const WHATSAPP al inicio del script.</div>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#inicio">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Pelotero Legoland</span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#elegirnos">Por qué elegirnos</a>
+        <a href="#juegos">El salón</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#reservar">Cómo reservar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-small" href="#cotizar">Reservar</a>
+    </div>
+    <div class="stud-row" aria-hidden="true"></div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1><span class="c-blue">Pelotero</span> <span class="c-red">Legoland</span></h1>
+          <p class="lede">Un espacio para celebrar, jugar y compartir.</p>
+          <a class="btn" href="#cotizar">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.4a10 10 0 0 0 4.65 1.18h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2zm5.76 14.15c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.41-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.37c.24-.27.64-.39 1.02-.39.12 0 .23 0 .33.01.3.01.44.03.64.49.24.58.82 2 .89 2.15.07.14.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.55.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.59-.07.16-.17.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.54.73 1.8.86.27.13.44.2.51.31.06.11.06.64-.18 1.32z"/></svg>
+            Consultar fecha por WhatsApp
+          </a>
+          <p>Diversión para chicos... y también para grandes.</p>
+          <p class="fine">Av. Facundo Zuviría 5951, Santa Fe. Cuatro datos y te abrimos WhatsApp.</p>
+        </div>
+        <div class="hero-stage" id="stage">
+          <div class="css-toys" aria-hidden="true">
+            <span class="ball ball-r"></span>
+            <span class="ball ball-y"></span>
+            <span class="ball ball-b"></span>
+            <span class="ball ball-g"></span>
+            <span class="mini-brick"></span>
+            <span class="mini-brick blue"></span>
+          </div>
+          <canvas id="toys" aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-white reveal" id="elegirnos">
+      <div class="wrap why">
+        <div>
+          <h2>Por qué elegirnos</h2>
+          <p class="why-lead">En Zuviría 5951 hay lugar para que los chicos jueguen y los grandes compartan el cumple.</p>
+        </div>
+        <ul class="reasons">
+          <li>
+            <span class="ico ico-red" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6 10 12v10c0 9 6 15 14 18 8-3 14-9 14-18V12L24 6z"/>
+                <path d="m17 24 5 5 9-10"/>
+              </svg>
+            </span>
+            <div>
+              <h3>Salón para el cumple</h3>
+              <p>Un lugar propio para festejar, sin armar nada en casa.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico ico-yellow" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <path d="m24 6 4.6 9.4 10.4 1.5-7.5 7.3 1.8 10.3L24 29.8 14.7 34.5l1.8-10.3L9 16.9l10.4-1.5L24 6z"/>
+              </svg>
+            </span>
+            <div>
+              <h3>Buenas valoraciones</h3>
+              <p>Las familias vuelven a elegirnos para el próximo cumpleaños.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico ico-blue" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 16h20a6 6 0 0 1 6 6v4a6 6 0 0 1-6 6H20l-8 6v-6h-2a6 6 0 0 1-6-6v-4a6 6 0 0 1 6-6z"/>
+              </svg>
+            </span>
+            <div>
+              <h3>Atención personalizada</h3>
+              <p>Nos escribís con la edad y la fecha, y te confirmamos si hay turno.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico ico-green" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <circle cx="24" cy="24" r="14"/>
+                <g class="hand"><path d="M24 24V14"/></g>
+                <path d="M24 24h7"/>
+              </svg>
+            </span>
+            <div>
+              <h3>Turno reservado</h3>
+              <p>Cuando confirmás, ese horario queda para tu festejo.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band reveal" id="juegos">
+      <div class="wrap">
+        <h2>El salón</h2>
+        <p class="intro">Pelotero, juegos y espacio para el cumpleaños. Los textos se editan en el HTML.</p>
+        <p class="owner-note">Fotos de stock para esta maqueta. Reemplazalas por fotos reales del salón.</p>
+        <div class="games">
+          <article class="game tilt">
+            <div class="game-photo">
+              <img src="https://images.pexels.com/photos/296308/pexels-photo-296308.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Niños saltando dentro de un castillo inflable amarillo" width="1400" height="960" decoding="async">
+            </div>
+            <div class="game-body">
+              <h3>Juegos para saltar</h3>
+              <!-- EDITAR texto -->
+              <p>Parte del salón, para que los más grandes se diviertan en el cumple.</p>
+            </div>
+          </article>
+          <article class="game tilt">
+            <div class="game-photo">
+              <img src="https://images.pexels.com/photos/19230215/pexels-photo-19230215.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Tres niños sentados en un pelotero lleno de pelotas de colores" width="1000" height="1400" loading="lazy" decoding="async">
+            </div>
+            <div class="game-body">
+              <h3>El pelotero</h3>
+              <!-- EDITAR texto -->
+              <p>El corazón del salón: pelotas de colores para jugar durante el festejo.</p>
+            </div>
+          </article>
+          <article class="game tilt">
+            <div class="game-photo">
+              <img src="https://images.pexels.com/photos/35649390/pexels-photo-35649390.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Una nena saliendo por la puerta de un inflable rojo, amarillo y verde" width="1200" height="800" loading="lazy" decoding="async">
+            </div>
+            <div class="game-body">
+              <h3>Más juegos</h3>
+              <!-- EDITAR texto -->
+              <p>Espacios de color para que el grupo se mueva sin salir del salón.</p>
+            </div>
+          </article>
+          <article class="game tilt">
+            <div class="game-photo">
+              <img src="https://images.pexels.com/photos/19875876/pexels-photo-19875876.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Una nena pequeña sonriendo entre pelotas de colores en un pelotero" width="1000" height="1400" loading="lazy" decoding="async">
+            </div>
+            <div class="game-body">
+              <h3>Para los más chicos</h3>
+              <!-- EDITAR texto -->
+              <p>Un rincón más tranquilo para los que todavía no saltan.</p>
+            </div>
+          </article>
+          <article class="game tilt">
+            <div class="game-photo">
+              <img src="https://images.pexels.com/photos/18294173/pexels-photo-18294173.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Inflable con forma de payaso de colores, sentado sobre una base roja y azul" width="1200" height="860" loading="lazy" decoding="async">
+            </div>
+            <div class="game-body">
+              <h3>Para las fotos</h3>
+              <!-- EDITAR texto -->
+              <p>Rincones coloridos del salón para la foto del cumpleaños.</p>
+            </div>
+          </article>
+          <article class="game tilt">
+            <div class="game-photo">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80" alt="Ramo de globos de colores en una fiesta de cumpleaños" width="1200" height="800" loading="lazy" decoding="async">
+            </div>
+            <div class="game-body">
+              <h3>La mesa del cumple</h3>
+              <!-- EDITAR texto -->
+              <p>Lugar para la torta, los globos y soplar las velitas con los invitados.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-white reveal" id="opiniones">
+      <div class="wrap">
+        <h2>Opiniones</h2>
+        <p class="intro">Comentarios públicos de familias que festejaron en el salón.</p>
+        <div class="reviews">
+          <article class="review tilt">
+            <svg class="stars" viewBox="0 0 120 24" aria-hidden="true" fill="currentColor">
+              <path d="M12 17.3 18.2 21l-1.6-7L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2l5.4 4.8L5.8 21 12 17.3z"/>
+              <path d="M36 17.3 42.2 21l-1.6-7L46 9.2l-7.2-.6L36 2 33.2 8.6 26 9.2l5.4 4.8L29.8 21 36 17.3z"/>
+              <path d="M60 17.3 66.2 21l-1.6-7L70 9.2l-7.2-.6L60 2 57.2 8.6 50 9.2l5.4 4.8L53.8 21 60 17.3z"/>
+              <path d="M84 17.3 90.2 21l-1.6-7L94 9.2l-7.2-.6L84 2 81.2 8.6 74 9.2l5.4 4.8L77.8 21 84 17.3z"/>
+              <path d="M108 17.3 114.2 21l-1.6-7L118 9.2l-7.2-.6L108 2 105.2 8.6 98 9.2l5.4 4.8 1.8 6.8-6.2-3.7z"/>
+            </svg>
+            <span class="visually-hidden">Ejemplo: 5 de 5 estrellas</span>
+            <q>El cumpleaños fue increíble. Las chicas, atentas con los niños y muy amables con los adultos. Se ocuparon de todo el cumple.</q>
+            <p>Reseña pública</p>
+          </article>
+          <article class="review tilt">
+            <svg class="stars" viewBox="0 0 120 24" aria-hidden="true" fill="currentColor">
+              <path d="M12 17.3 18.2 21l-1.6-7L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2l5.4 4.8L5.8 21 12 17.3z"/>
+              <path d="M36 17.3 42.2 21l-1.6-7L46 9.2l-7.2-.6L36 2 33.2 8.6 26 9.2l5.4 4.8L29.8 21 36 17.3z"/>
+              <path d="M60 17.3 66.2 21l-1.6-7L70 9.2l-7.2-.6L60 2 57.2 8.6 50 9.2l5.4 4.8L53.8 21 60 17.3z"/>
+              <path d="M84 17.3 90.2 21l-1.6-7L94 9.2l-7.2-.6L84 2 81.2 8.6 74 9.2l5.4 4.8L77.8 21 84 17.3z"/>
+              <path d="M108 17.3 114.2 21l-1.6-7L118 9.2l-7.2-.6L108 2 105.2 8.6 98 9.2l5.4 4.8 1.8 6.8-6.2-3.7z"/>
+            </svg>
+            <span class="visually-hidden">Ejemplo: 5 de 5 estrellas</span>
+            <q>Amplio, muy bien equipado y con muy buena atención de los profes.</q>
+            <p>Reseña pública</p>
+          </article>
+          <article class="review tilt">
+            <svg class="stars" viewBox="0 0 120 24" aria-hidden="true" fill="currentColor">
+              <path d="M12 17.3 18.2 21l-1.6-7L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2l5.4 4.8L5.8 21 12 17.3z"/>
+              <path d="M36 17.3 42.2 21l-1.6-7L46 9.2l-7.2-.6L36 2 33.2 8.6 26 9.2l5.4 4.8L29.8 21 36 17.3z"/>
+              <path d="M60 17.3 66.2 21l-1.6-7L70 9.2l-7.2-.6L60 2 57.2 8.6 50 9.2l5.4 4.8L53.8 21 60 17.3z"/>
+              <path d="M84 17.3 90.2 21l-1.6-7L94 9.2l-7.2-.6L84 2 81.2 8.6 74 9.2l5.4 4.8L77.8 21 84 17.3z"/>
+              <path d="M108 17.3 114.2 21l-1.6-7L118 9.2l-7.2-.6L108 2 105.2 8.6 98 9.2l5.4 4.8 1.8 6.8-6.2-3.7z"/>
+            </svg>
+            <span class="visually-hidden">Ejemplo: 5 de 5 estrellas</span>
+            <q>Festejamos en el turno de 16 a 18:30. El equipo se dedicó al cumple de principio a fin.</q>
+            <p>Reseña pública</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band reveal" id="reservar">
+      <div class="wrap">
+        <h2>Cómo reservar</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <h3>Nos escribís</h3>
+              <p>Completás el formulario corto y se abre WhatsApp con tus datos.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <h3>Te confirmamos el turno</h3>
+              <p>Te decimos si esa fecha está libre y cómo es el festejo en el salón.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <h3>Reservamos tu fecha</h3>
+              <p>El cumpleaños se festeja en el salón, con el pelotero y los juegos.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band band-soft reveal" id="cotizar">
+      <div class="wrap">
+        <h2>Consultá tu fecha</h2>
+        <p class="intro">Cuatro preguntas. Al enviar se abre WhatsApp con las respuestas y no se guarda nada en un servidor.</p>
+        <form id="quote-form" novalidate>
+          <div class="fields">
+            <label>Nombre de quien cumple
+              <input id="nombre" name="nombre" type="text" maxlength="60" required autocomplete="name">
+            </label>
+            <label>Cuántos años cumple
+              <input id="edad" name="edad" type="number" inputmode="numeric" min="1" max="12" required autocomplete="off">
+            </label>
+            <label>Fecha del cumple
+              <input id="fecha" name="fecha" type="date" required>
+            </label>
+            <label>Cuántos chicos, más o menos
+              <input id="chicos" name="chicos" type="number" inputmode="numeric" min="1" max="80" required autocomplete="off">
+            </label>
+            <div class="span-2">
+              <button class="btn" type="submit">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.4a10 10 0 0 0 4.65 1.18h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2zm5.76 14.15c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.41-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.37c.24-.27.64-.39 1.02-.39.12 0 .23 0 .33.01.3.01.44.03.64.49.24.58.82 2 .89 2.15.07.14.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.55.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.59-.07.16-.17.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.54.73 1.8.86.27.13.44.2.51.31.06.11.06.64-.18 1.32z"/></svg>
+                Enviar a WhatsApp
+              </button>
+              <p id="form-status" class="form-status" role="status"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="band band-white reveal" id="contacto">
+      <div class="wrap">
+        <h2>Contacto</h2>
+        <p class="intro">Escribinos al +54 9 3424 07-8054 o seguinos en Instagram.</p>
+        <div class="contact-actions">
+          <a class="btn btn-green" href="#cotizar">Ir al formulario</a>
+          <a class="btn btn-line" id="link-ig" href="https://www.instagram.com/pelotero.legoland.santafe/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="btn btn-line" id="link-maps" href="https://maps.app.goo.gl/VFuuvjcJxA2Gob9q6" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+        </div>
+        <h3 style="font-size:1.45rem;margin:0 0 8px">Dónde estamos</h3>
+        <p class="coverage">Av. Facundo Zuviría 5951, Santa Fe. El turno te lo confirmamos por WhatsApp.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <strong>Pelotero Legoland</strong>
+      <nav aria-label="Pie">
+        <a href="#juegos">El salón</a>
+        <a href="#cotizar">Consultar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <div class="wrap">
+      <p>Fotos de muestra de Pexels y Unsplash. Reemplazalas por fotos del negocio. La escena de pelotas y bloques es original de esta página; Three.js r128 (MIT) se carga desde cdnjs.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="#cotizar" aria-label="Ir al formulario para consultar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.4a10 10 0 0 0 4.65 1.18h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2zm5.76 14.15c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.41-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.37c.24-.27.64-.39 1.02-.39.12 0 .23 0 .33.01.3.01.44.03.64.49.24.58.82 2 .89 2.15.07.14.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.55.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.59-.07.16-.17.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.54.73 1.8.86.27.13.44.2.51.31.06.11.06.64-.18 1.32z"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    const WHATSAPP = "5493424078054";
+    const INSTAGRAM = "https://www.instagram.com/pelotero.legoland.santafe/";
+    const MENSAJE_WHATSAPP = "¡Hola! Quiero consultar un cumpleaños en LEGOLAND Pelotero, Av. Facundo Zuviría 5951, Santa Fe.";
+
+    function telefono(valor) {
+      const limpio = String(valor).trim().replace(/^\+/, "").replace(/[\s-]/g, "");
+      return /x/i.test(limpio) ? limpio : limpio.replace(/\D/g, "");
+    }
+
+    function enlaceWhatsapp(texto) {
+      return "https://wa.me/" + telefono(WHATSAPP) + "?text=" + encodeURIComponent(texto);
+    }
+
+    function hoyISO() {
+      const n = new Date();
+      const m = String(n.getMonth() + 1).padStart(2, "0");
+      const d = String(n.getDate()).padStart(2, "0");
+      return n.getFullYear() + "-" + m + "-" + d;
+    }
+
+    function fechaLocal(iso) {
+      const partes = String(iso).split("-");
+      if (partes.length !== 3) return iso;
+      return partes[2] + "/" + partes[1] + "/" + partes[0];
+    }
+
+    if (/x/i.test(WHATSAPP)) {
+      const aviso = document.getElementById("phone-banner");
+      aviso.hidden = false;
+    }
+
+    document.querySelectorAll("[data-wa]").forEach(function (el) {
+      el.href = enlaceWhatsapp(MENSAJE_WHATSAPP);
+    });
+    document.getElementById("link-ig").href = INSTAGRAM;
+
+    const fechaInput = document.getElementById("fecha");
+    fechaInput.min = hoyISO();
+
+    const estado = document.getElementById("form-status");
+    document.getElementById("quote-form").addEventListener("submit", function (evento) {
+      evento.preventDefault();
+      const edadInput = document.getElementById("edad");
+      const nombreInput = document.getElementById("nombre");
+      const chicosInput = document.getElementById("chicos");
+      const nombre = nombreInput.value.trim();
+      const edad = Number(edadInput.value);
+      const chicos = Number(chicosInput.value);
+      const fecha = fechaInput.value;
+      let error = "";
+      let foco = null;
+
+      edadInput.removeAttribute("aria-invalid");
+      fechaInput.removeAttribute("aria-invalid");
+      nombreInput.removeAttribute("aria-invalid");
+      chicosInput.removeAttribute("aria-invalid");
+
+      if (nombre.length < 2) {
+        error = "Escribí el nombre de quien cumple.";
+        nombreInput.setAttribute("aria-invalid", "true");
+        foco = nombreInput;
+      } else if (!edadInput.value || !Number.isInteger(edad) || edad < 1 || edad > 12) {
+        error = "La edad tiene que ser un número entre 1 y 12.";
+        edadInput.setAttribute("aria-invalid", "true");
+        foco = edadInput;
+      } else if (!fecha || fecha < hoyISO()) {
+        error = "Elegí una fecha de hoy en adelante.";
+        fechaInput.setAttribute("aria-invalid", "true");
+        foco = fechaInput;
+      } else if (!chicosInput.value || !Number.isInteger(chicos) || chicos < 1 || chicos > 80) {
+        error = "Decinos una cantidad aproximada de chicos.";
+        chicosInput.setAttribute("aria-invalid", "true");
+        foco = chicosInput;
+      }
+
+      if (error) {
+        estado.textContent = error;
+        estado.classList.remove("is-ok");
+        if (foco) foco.focus();
+        return;
+      }
+
+      const lineas = [
+        MENSAJE_WHATSAPP,
+        "",
+        "Nombre: " + nombre,
+        "Años que cumple: " + edad,
+        "Fecha: " + fechaLocal(fecha),
+        "Chicos, más o menos: " + chicos
+      ];
+
+      const url = enlaceWhatsapp(lineas.join("\n"));
+      estado.textContent = "Abrimos WhatsApp con tu mensaje. Si no se abrió, tocá de nuevo el botón.";
+      estado.classList.add("is-ok");
+      const ventana = window.open(url, "_blank", "noopener,noreferrer");
+      if (!ventana) window.location.href = url;
+    });
+
+    document.querySelectorAll(".game-photo img").forEach(function (img) {
+      img.addEventListener("error", function () {
+        const marco = img.closest(".game-photo");
+        marco.classList.add("is-missing");
+        img.remove();
+      });
+    });
+
+    if (document.documentElement.classList.contains("motion")) {
+      const vistos = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (entrada) {
+          if (!entrada.isIntersecting) return;
+          entrada.target.classList.add("is-in");
+          vistos.unobserve(entrada.target);
+        });
+      }, { threshold: 0.14, rootMargin: "0px 0px -8% 0px" });
+      document.querySelectorAll(".reveal").forEach(function (seccion) { vistos.observe(seccion); });
+
+      const piezas = Array.prototype.slice.call(document.querySelectorAll("[data-parallax]"));
+      let parallaxPedido = false;
+      function moverParallax() {
+        parallaxPedido = false;
+        const y = window.scrollY;
+        piezas.forEach(function (el) {
+          const velocidad = Number(el.getAttribute("data-parallax"));
+          el.style.transform = "translate3d(0, " + (y * velocidad).toFixed(1) + "px, 0)";
+        });
+      }
+      window.addEventListener("scroll", function () {
+        if (parallaxPedido) return;
+        parallaxPedido = true;
+        requestAnimationFrame(moverParallax);
+      }, { passive: true });
+      moverParallax();
+
+      const punteroFino = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+      if (punteroFino) {
+        document.querySelectorAll(".tilt").forEach(function (tarjeta) {
+          tarjeta.addEventListener("pointerenter", function () { tarjeta.classList.add("is-tilting"); });
+          tarjeta.addEventListener("pointermove", function (e) {
+            if (e.pointerType !== "mouse") return;
+            const recta = tarjeta.getBoundingClientRect();
+            const px = (e.clientX - recta.left) / recta.width - 0.5;
+            const py = (e.clientY - recta.top) / recta.height - 0.5;
+            tarjeta.style.transform = "perspective(900px) rotateX(" + (-py * 5).toFixed(2) + "deg) rotateY(" + (px * 6).toFixed(2) + "deg)";
+          });
+          tarjeta.addEventListener("pointerleave", function () {
+            tarjeta.classList.remove("is-tilting");
+            tarjeta.style.transform = "";
+          });
+        });
+      }
+    }
+
+    function iniciarEscena() {
+      if (!window.THREE || !document.documentElement.classList.contains("motion")) return;
+      const stage = document.getElementById("stage");
+      const canvas = document.getElementById("toys");
+      const chica = window.matchMedia("(max-width: 800px)").matches;
+      let renderer;
+      try {
+        renderer = new THREE.WebGLRenderer({
+          canvas: canvas,
+          alpha: true,
+          antialias: !chica,
+          powerPreference: "high-performance"
+        });
+      } catch (error) {
+        return;
+      }
+      renderer.setClearColor(0x000000, 0);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, chica ? 1.25 : 1.5));
+
+      const escena = new THREE.Scene();
+      const camara = new THREE.PerspectiveCamera(42, 1, 0.1, 40);
+      camara.position.set(0.1, 0.35, chica ? 5.8 : 7.4);
+      camara.lookAt(0, 0.05, 0);
+
+      escena.add(new THREE.HemisphereLight(0xfff6df, 0x9eb6e8, 1));
+      const sol = new THREE.DirectionalLight(0xffffff, 0.72);
+      sol.position.set(3.2, 6.4, 4.2);
+      escena.add(sol);
+
+      const raiz = new THREE.Group();
+      escena.add(raiz);
+
+      const colores = [0xc81d25, 0xf5c518, 0x1d4ed8, 0x166534, 0xf97316];
+      const esfera = new THREE.SphereGeometry(1, chica ? 12 : 18, chica ? 10 : 14);
+      const tacoGeo = new THREE.CylinderGeometry(0.12, 0.12, 0.12, 8);
+      const cajaAncha = new THREE.BoxGeometry(1.2, 0.42, 0.72);
+      const cajaCorta = new THREE.BoxGeometry(0.72, 0.42, 0.72);
+      const cuerpos = [];
+      const puestos = [
+        [-2.3, 0.6, 0.3], [-1.15, 1.45, -0.35], [0.05, 0.25, 0.55],
+        [1.25, 1.15, -0.15], [2.25, 0.45, 0.25], [-1.8, 1.9, 0.7],
+        [0.7, 1.85, -0.7], [1.9, 1.7, 0.45], [-0.45, 0.9, -0.55],
+        [2.55, 1.25, -0.45], [-2.65, 1.25, -0.2], [0.95, 0.35, 0.05],
+        [-0.7, 2.15, 0.15]
+      ];
+      const cantidad = chica ? 8 : puestos.length;
+
+      for (let i = 0; i < cantidad; i += 1) {
+        const malla = new THREE.Mesh(
+          esfera,
+          new THREE.MeshLambertMaterial({ color: colores[i % colores.length] })
+        );
+        const escala = 0.28 + (i % 4) * 0.07;
+        malla.scale.setScalar(escala);
+        malla.position.set(puestos[i][0], puestos[i][1], puestos[i][2]);
+        raiz.add(malla);
+        cuerpos.push({
+          mesh: malla,
+          vy: 1.05 + (i % 5) * 0.22,
+          floor: -1.45,
+          spin: 0.004 + (i % 4) * 0.0015
+        });
+      }
+
+      const ladrillos = chica ? 4 : 6;
+      for (let i = 0; i < ladrillos; i += 1) {
+        const material = new THREE.MeshLambertMaterial({ color: colores[(i + 1) % colores.length] });
+        const ancho = i % 2 === 0;
+        const grupo = new THREE.Group();
+        grupo.add(new THREE.Mesh(ancho ? cajaAncha : cajaCorta, material));
+        const columnas = ancho ? 2 : 1;
+        for (let cx = 0; cx < columnas; cx += 1) {
+          for (let rz = 0; rz < 2; rz += 1) {
+            const taco = new THREE.Mesh(tacoGeo, material);
+            taco.position.set(
+              columnas === 1 ? 0 : (cx - 0.5) * 0.52,
+              0.27,
+              (rz - 0.5) * 0.32
+            );
+            grupo.add(taco);
+          }
+        }
+        grupo.position.set(-1.7 + i * 0.72, 0.35 + (i % 3) * 0.45, -0.35 + (i % 2) * 0.4);
+        grupo.rotation.y = 0.35 * i;
+        raiz.add(grupo);
+        cuerpos.push({
+          mesh: grupo,
+          vy: 0.85 + (i % 3) * 0.28,
+          floor: -1.35,
+          spin: 0.005
+        });
+      }
+
+      let destinoX = 0;
+      let destinoY = 0;
+      stage.addEventListener("pointermove", function (e) {
+        const recta = stage.getBoundingClientRect();
+        destinoY = ((e.clientX - recta.left) / recta.width - 0.5) * 0.55;
+        destinoX = ((e.clientY - recta.top) / recta.height - 0.5) * 0.22;
+      }, { passive: true });
+
+      function ajustar() {
+        const ancho = stage.clientWidth;
+        const alto = stage.clientHeight;
+        if (!ancho || !alto) return;
+        camara.aspect = ancho / alto;
+        camara.updateProjectionMatrix();
+        renderer.setSize(ancho, alto, false);
+      }
+      ajustar();
+      if (window.ResizeObserver) {
+        const observador = new ResizeObserver(ajustar);
+        observador.observe(stage);
+      } else {
+        window.addEventListener("resize", ajustar);
+      }
+
+      const reloj = new THREE.Clock();
+      let activo = false;
+      let visible = true;
+      let cuadro = 0;
+
+      function encender() {
+        if (activo) return;
+        activo = true;
+        reloj.getDelta();
+        cuadro = requestAnimationFrame(tick);
+      }
+      function apagar() {
+        activo = false;
+        cancelAnimationFrame(cuadro);
+      }
+      function tick() {
+        if (!activo) return;
+        cuadro = requestAnimationFrame(tick);
+        const dt = Math.min(0.033, reloj.getDelta());
+        for (let i = 0; i < cuerpos.length; i += 1) {
+          const cuerpo = cuerpos[i];
+          cuerpo.vy -= 2.35 * dt;
+          cuerpo.mesh.position.y += cuerpo.vy * dt * 1.55;
+          if (cuerpo.mesh.position.y < cuerpo.floor) {
+            cuerpo.mesh.position.y = cuerpo.floor;
+            cuerpo.vy = Math.abs(cuerpo.vy) * 0.62 + 1.12;
+          }
+          if (cuerpo.vy > 3.3) cuerpo.vy = 3.3;
+          cuerpo.mesh.rotation.y += cuerpo.spin;
+        }
+        const scroll = Math.min(window.scrollY, 480) * 0.00035;
+        raiz.rotation.y += (destinoY - raiz.rotation.y) * 0.06;
+        raiz.rotation.x += (destinoX + scroll - raiz.rotation.x) * 0.06;
+        renderer.render(escena, camara);
+      }
+
+      const vista = new IntersectionObserver(function (entradas) {
+        visible = entradas[0].isIntersecting;
+        if (visible && !document.hidden) encender();
+        else apagar();
+      }, { threshold: 0.08 });
+      vista.observe(stage);
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) apagar();
+        else if (visible) encender();
+      });
+
+      stage.classList.add("stage-live");
+      if (!document.hidden) encender();
+    }
+
+    iniciarEscena();
+  </script>
+</body>
+</html>
